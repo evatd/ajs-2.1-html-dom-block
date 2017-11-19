@@ -1,4 +1,3 @@
-
 //Option one: linear
 var header = document.getElementById('header'),
 htmlArray = []; // Array containing bits of individual ul HTML.
