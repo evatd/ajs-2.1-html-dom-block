@@ -1,7 +1,7 @@
 //Option one: linear
 var header = document.getElementById('header'),
-    htmlArray = []; // Array containing bits of individual ul HTML.
-    htmlOutput, //This will be our final string, which will encompass our elements
+htmlArray = []; // Array containing bits of individual ul HTML.
+htmlOutput, //This will be our final string, which will encompass our elements
 
 htmlArray.push('<ul>');
 htmlArray.push('<li>This is a first item</li>'); //list the items
@@ -17,15 +17,15 @@ header.insertAdjacentHTML('afterend', htmlOutput);
 
 //Option two: array
 var header = document.getElementById('header'),
-    htmlString,
-    htmlArray = [],
-    items = [
-        'This is a first item',
-        'This is a second item',
-        'And one more'
-    ],
-    numItems = items.length,
-    i;
+htmlString,
+htmlArray = [],
+items = [
+    'This is a first item',
+    'This is a second item',
+    'And one more'
+],
+numItems = items.length,
+i;
 
 //Code below is reusable
 //All we have to do is change the values stored in the array above
@@ -33,10 +33,10 @@ var header = document.getElementById('header'),
 htmlArray.push('<ul>');
 
 //Create each li element and append it to the ul
-for (i = 0; i<numItems, i++){
-    htmlArray.push('<li>');
-    htmlArray.push(items[i]); //not a string, no need for ''
-    htmlArray.push('<li>')
+for (i = 0; i<numItems, i++) {
+htmlArray.push('<li>');
+htmlArray.push(items[i]); //not a string, no need for ''
+htmlArray.push('<li>')
 }
 
 htmlArray.push('</ul>');
@@ -46,4 +46,3 @@ htmlString = htmlArray.join("");
 
 //Insert the new HTML
 header.insertAdjacentHTML("afterend", htmlString);
-
